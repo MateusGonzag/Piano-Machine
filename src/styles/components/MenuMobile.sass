@@ -1,0 +1,94 @@
+.menu
+    background-color: #0000006e
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: space-between
+    font-family: 'Digital Display'
+    color: #6cf94e
+    outline: 4px solid #2b6565
+    border: #4f0b55 4px solid
+
+.menuDisplay
+    margin-top: 7px
+
+.painelMenu
+    margin-right: 10px
+    margin-top: -3px
+    font-family: 'Monoton'
+    color: #ffffff4e
+    font-size: 1.5rem
+    transform: skew(-5deg , -5deg)
+    padding: 0px 10px 10px 10px
+
+.painelNeon
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 60px #d411e4, 0 0 60px #d411e4, 0 0 60px #d411e4, 0 0 70px #d411e4, 0 0 100px #d411e4
+    color: #ffffff
+
+.switchMenu
+    z-index: 5
+    margin:0
+    padding: 0
+    margin-top: -25px
+    margin-left: 10px
+
+.switchMenu input
+    opacity: 0
+    width: 0
+    height: 0
+
+.xUm
+    position: absolute
+    cursor: pointer
+    -webkit-transition: 0.3s
+    transition: 0.3s
+    width: 28px
+    height: 28px
+    border-radius: 50%
+    border: 3px dashed #9f1cab
+    display: flex
+    align-items: center
+    justify-content: center
+
+.xDois
+    position: absolute
+    width: 28px
+    height: 28px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.xUm:before
+    position: absolute
+    content: ""
+    height: 3px
+    width: 12px
+    background: #52ced0
+    -webkit-transition: 0.3s
+    transition: 0.3s
+    border-radius: 5px
+    margin-top: 8px
+
+.xDois:before
+    margin-bottom: 10px
+    position: absolute
+    content: ""
+    height: 3px
+    width: 12px
+    background: #52ced0
+    -webkit-transition: 0.3s
+    transition: 0.3s
+    border-radius: 8px
+    
+.switchMenu input:checked + .xUm:before
+    transform: rotate(45deg)
+    margin: 0
+
+.switchMenu input:checked + .xUm .xDois:before
+    transform: rotate(-45deg)
+    margin: 0
+
+.switchMenu input:checked + .xUm
+    transform: rotate(90deg)
+
+

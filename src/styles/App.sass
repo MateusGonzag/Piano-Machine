@@ -1,0 +1,109 @@
+@use './variables'
+@import url('https://fonts.googleapis.com/css?family=Monoton')
+@font-face
+    font-family: Digital Display
+    src: url('/fonts/LiquidCrystal-BoldItalic.otf')
+
+/* Set grid*/
+.wrapper
+    display: grid
+    grid-template-columns: 20% 20% 20% 20% 20%
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%
+    height: 100%
+    width: 100%
+
+/* Grid Controls component*/
+.buttons
+    grid-column: 1 / 2
+    grid-row: 7 / 10
+    padding-bottom: 2rem
+
+/* Grid info's components*/
+.displayInfo
+    grid-column: 5 / 6
+    grid-row: 1 / 11
+    padding-bottom: 1rem
+
+/* Grid Drum and Piano components
+.displayDrum , .displayPiano
+    grid-column: 2 / span 3
+    grid-row: 1 / span 10
+    padding-bottom: 2rem
+    margin: 1rem
+
+/* Panel On Off*/    
+.painel
+    grid-row: 2 / span 3
+    display: flex
+    align-items: center
+
+.painelLetter
+    display: flex
+    align-items: center
+    transform: skew(-25deg, -20deg)
+    font-family: 'Monoton'
+    font-size: 80px
+    color: #ffffff4e
+    background-color: #00000062
+    padding-right: 70px
+    padding-left: 70px
+    height: 110px
+    position: relative
+    right: 50px
+    top: 20px
+    outline: 4px solid #2b6565
+    border: #4f0b55 4px solid
+
+.ONShadow
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d411e4, 0 0 35px #d411e4, 0 0 40px #d411e4, 0 0 50px #d411e4, 0 0 75px #d411e4
+    color: #ffffff
+    border: #d411e4 4px solid
+    box-shadow: 0px 0px 10px 0px #d411e4 , inset 0px 0px 10px 2px #d411e4, 0px 0px 18px 2px #69fcff
+    outline: 4px solid #69fcff
+
+.portrait
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: black
+    z-index: 5
+    color: #ffff
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 5vw
+    transition: opacity 2s
+
+.menuApp
+    grid-column: 1 / 6
+    grid-row: 1 /1
+    opacity: 0
+
+@media (max-height: 500px)
+    .painel
+        opacity: 0
+
+    .buttons
+        height: 90%
+        width: 30%
+        left: -100px
+        position: absolute
+        padding-bottom: 4rem
+        opacity: 0
+        transition: .3s
+        z-index: 0
+
+    .buttonsON
+        opacity: 1
+        transform: translateX(100px)
+        z-index: 4
+
+    .displayDrum , .displayPiano
+        grid-column: 1 / 6
+        grid-row: 1 / 11
+        margin: 0
+        margin-top: 1.9rem
+        padding: 0
+
+    .menuApp
+        opacity: 1
