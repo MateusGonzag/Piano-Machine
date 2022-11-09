@@ -1,4 +1,4 @@
-# Piano Machine
+# Piano Machine retrô
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
@@ -6,7 +6,7 @@
 
 # Sobre o projeto
 
-É um piano/bateria eletrônico criado com Vite e Yarn, usei contextAPI para gerenciar um estado global junto com useReduce. Primeiro contato com SASS pós teoria. Maior desafio que encontrei foi fazer o botão de volume circular para simular um potenciômetro, tive que aprender mais e colocar conhecimento a prova para fazer isto.
+É um piano/bateria com tema retrô eletrônico criado com Vite e Yarn, usei contextAPI para gerenciar um estado global junto com useReduce. Primeiro contato com SASS pós teoria. Maior desafio que encontrei foi fazer o botão de volume circular para simular um potenciômetro, tive que aprender mais e colocar conhecimento a prova para fazer isto.
 
 ## :heavy_check_mark: Tecnologias, dependências e ferramentas utilizadas
 
