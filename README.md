@@ -6,7 +6,7 @@
 
 # Sobre o projeto
 
-É um piano/bateria eletrônico, usei contextAPI para gerenciar um estado global junto com useReduce. Primeiro contato com SASS pós teoria. Maior desafio que encontrei foi fazer o botão de volume circular para simular um potenciômetro, tive que aprender mais e colocar conhecimento a prova para fazer isto.
+É um piano/bateria eletrônico criado com Vite e Yarn, usei contextAPI para gerenciar um estado global junto com useReduce. Primeiro contato com SASS pós teoria. Maior desafio que encontrei foi fazer o botão de volume circular para simular um potenciômetro, tive que aprender mais e colocar conhecimento a prova para fazer isto.
 
 ## :heavy_check_mark: Tecnologias, dependências e ferramentas utilizadas
 
