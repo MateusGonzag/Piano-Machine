@@ -11,7 +11,6 @@
 ## :heavy_check_mark: Tecnologias, dependências e ferramentas utilizadas
 
 + HTML
-+ CSS
 + JavaScript
 + React
 + Yarn
